@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Página web de Colegio Emanuel. Información sobre el colegio, nuestros servicios y cómo contactarnos.">
+        <link rel="icon" href="img/emanuel.ico" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style_logros.css">
+        <title>Colegio Emanuel - Inicio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <i class="fab fa-twitter">
+                    </i
+        >
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fab fa-instagram">
+                    </i
+        >
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <i class="fab fa-linkedin-in">
+                    </i
+        >
+                </a>
+            </div>
+            <div class="logo_titulo">
+                <img src="img/emanuel.png" alt="Logo del Colegio Emanuel">
+                <h1>Colegio Cristiano Emanuel</h1>
+                <p>Educación para el futuro</p>
+            </div>
+            <nav>
+                <ul id="menu">
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="servicios.html">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Iniciar Sesión</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu-hamburguesa" id="menuHamburguesa">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </header>
+        <!-- Seccion contacto... -->
+        <!-- Sección de Contacto -->
+          <section class="section_contacto">
+              <div class="formulario_contacto">
+                <h2>Contáctanos</h2>
+                <!-- Formulario de contacto -->
+                <div class="login-page">
+                    <div class="form">
+                        <form class="login-form">
+                            <label for="nombre">Ingrese su Nombre:</label>
+                            <input type="text" placeholder="ingrese nombre">
+                            <label for="email">Ingrese su Email:</label>
+                            <input type="text" placeholder="ingrese su email">
+                            <label for="mensaje">Ingrese el Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" required></textarea>
+                            <button>registrar</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mapa de ubicación -->
+                <div class="map">
+                    <h2 align="center">Nuestra Ubicación</h2>
+                    <div class="map-container" align="center">
+                        <!-- Mapa embebido de Google Maps -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2086.128438770235!2d-74.8765532600814!3d-10.928517796665714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910a2b6294c8bb57%3A0x9693a9b1feb4303d!2sColegio%20Emanuel!5e0!3m2!1ses-419!2spe!4v1726771100105!5m2!1ses-419!2spe"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <p>Siguenos en Nuestras Redes Sociales</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank">
+                        <i class="fab fa-facebook-f">
+                        </i
+        >
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <i class="fab fa-twitter">
+                        </i
+        >
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <i class="fab fa-instagram">
+                        </i
+        >
+                    </a>
+                    <a href="https://linkedin.com" target="_blank">
+                        <i class="fab fa-linkedin-in">
+                        </i
+        >
+                    </a>
+                </div>
+                <p>
+                    &copy; 2024 Colegio Cristiano Emanuel. Todos los derechos reservados.
+                </p>
+                <p>“Todo lo puedo en Cristo que me fortalece”</p>
+            </footer>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+            <script>
+      const menuHamburguesa = document.getElementById("menuHamburguesa");
+      const menu = document.getElementById("menu");
+
+      menuHamburguesa.addEventListener("click", () => {
+        menu.classList.toggle("show");
+        document.querySelector(".logo_titulo").classList.toggle("shift"); // Agregar clase para empujar
+      });
+            </script>
+        </body>
+    </html>

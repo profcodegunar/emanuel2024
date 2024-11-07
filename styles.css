@@ -1,0 +1,706 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400);
+* {
+  font-family:Roboto;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin     : 0;
+  padding    : 0;
+  box-sizing : border-box;
+  letter-spacing: 2px;
+  list-style: none;
+}
+
+/***************** Header **************/
+header {
+  background-color: #3880eb;
+  color           : white;
+  padding         : 20px 0;
+  position        : relative;
+}
+
+.logo_titulo {
+  text-align: center;
+  padding   : 10px 0;
+  font-size: 30px;
+}
+
+.logo_titulo img {
+  width: 85px;
+}
+
+.logo_titulo h1 {
+  font-size : 1.8rem;
+  margin-top: 10px;
+}
+
+.logo_titulo p {
+  font-size: 1rem;
+  color    : #ddd;
+}
+
+/***************** Iconos ******************/
+.social-icons {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  gap            : 25px;
+  padding-top    : 10px;
+}
+
+.social-icons a {
+  display        : inline-flex;
+  align-items    : center;
+  justify-content: center;
+  width          : 40px;
+  height         : 40px;
+  border-radius  : 50%;
+  color          : white;
+  text-decoration: none;
+  transition     : transform 0.3s, background-color 0.3s;
+}
+
+.social-icons a i {
+  font-size: 20px;
+}
+
+/*************** Colores específicos de cada red social ******************/
+.social-icons a[href*="facebook.com"] {
+  background-color: #3b5998;
+}
+
+.social-icons a[href*="twitter.com"] {
+  background-color: #1da1f2;
+}
+
+.social-icons a[href*="instagram.com"] {
+  background-color: #e4405f;
+}
+
+.social-icons a[href*="linkedin.com"] {
+  background-color: #0077b5;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+  filter   : brightness(1.2);
+}
+
+/******************* Navegación ******************/
+nav {
+  display         : flex;
+  justify-content : center;
+  background-color: #3880eb;
+  padding         : 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display        : flex;
+  gap            : 45px;
+  margin         : 0;
+}
+
+nav ul li a {
+  color          : white;
+  text-decoration: none;
+  font-weight    : bold;
+  font-size      : 1rem;
+  transition     : color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffa500;
+}
+
+/**************** Menu hamburguesa ***************/
+.menu-hamburguesa {
+  display       : none;
+  flex-direction: column;
+  cursor        : pointer;
+  position      : absolute;
+  right         : 20px;
+  top           : 20px;
+  gap           : 6px;
+}
+
+.menu-hamburguesa div {
+  width           : 30px;
+  height          : 3px;
+  background-color: white;
+  transition      : all 0.3s ease;
+}
+/********** Bienvenidos ***********/
+.bienvenidos{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  text-align: justify;
+  flex-wrap: wrap; 
+  padding-top: 20px;
+}
+.actividades h2{
+  color: #1F438C;
+  padding-bottom: 25px;
+}
+.actividades li{
+  padding: 10px 0;
+}
+.actividades li i{
+  color: white;
+  border-radius: 100%;
+  background-color: #8FBF26;
+  padding: 5px;
+}
+.logros_recientes{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  text-align:center;
+  flex-wrap: wrap;
+}
+.logros_recientes_img img{
+  width: 450px;
+  height: 350px;
+  margin: 0 auto;
+}
+figcaption{
+  /* width: 450px; */
+  text-align: center;
+  padding-top: 20px;
+}
+.bienvenida{
+  width: 600px;
+  padding:50px;
+}
+.bienvenida h2{
+  text-align: center;
+  padding-bottom: 25px;
+  color: #1F438C;
+}
+.img_bienvenida img{
+  
+  filter: brightness(0.7); /* Oscurece la imagen ligeramente */
+  transition: transform 0.5s ease, filter 0.5s ease; /* Suaviza la transición */
+  transform: scale(1); /* Estado inicial de escala */
+  border-radius: 8px; /* Asegura bordes redondeados en la imagen también */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para la imagen */
+  width: 750px;
+}
+.img_bienvenida img:hover{
+  filter: brightness(1) contrast(1.2); /* Ajusta el brillo y aumenta el contraste */
+    transform: scale(1.05); /* Aplica un ligero aumento de escala */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4); /* Sombra más grande en hover */
+  }
+
+/********** logros ***********/
+.logros_eventos{
+  width: 95%;
+  background-color: #f8bb05;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 10px;
+}
+.logros_eventos h2{
+  color:#1F438C;
+  padding-bottom: 25px;
+  text-align: center;
+}
+.logros_eventos .mision{
+  margin-bottom: 40px;
+  margin-top: -50px;
+}
+/* .evento{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+.content img{
+  width: 75px;
+}
+.container .card {
+  position: relative;
+  min-width: 320px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  margin: 30px;
+}
+.container .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #d0e9fa;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .card .box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.02);
+}
+.container .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+.container .card .box .content h2 {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  font-size: 3em;
+  color: rgba(0, 0, 0, 0.02);
+  transition: 0.5s;
+}
+.container .card .box .content h3 {
+  font-size: 1.8em;
+  color: #777;
+  z-index: 1;
+  transition: 0.4s;
+}
+.container .card .box .content p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #777;
+  z-index: 1;
+  transition: 0.4s;
+}
+.container .card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: #03a9f4;
+  margin-top: 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 400;
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.container .card:hover .box {
+  transform: translateY(-50px);
+  transition: 0.5S;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(45deg, #079DD9, #1F438C);
+}
+.container .card:hover .box .content h2 {
+  color: rgba(0, 0, 0, 0.05);
+}
+.container .card:hover .box .content h3 {
+  color: rgb(255, 255, 255);
+}
+.container .card:hover .box .content p {
+  color: rgb(255, 255, 255);
+}
+.container .card:hover .box .content a {
+  background: #F2B705;
+} */
+/*************** Main **************/
+main h2 {
+  text-align: center;
+}
+.servicios_colegio h2{
+  text-align: center;
+}
+.actividades{
+  width: 650px;
+  padding-bottom: 50px;
+}
+/*************** Video Aniversario **************/
+.video_aniversario iframe{
+  width: 750px;
+  height: 450px;
+  border: none;
+  overflow: hidden;
+}
+
+/********************* Botón ********************/
+.btn {
+  background-color: #F2B705;
+  color           : white;
+  padding         : 10px 20px;
+  border          : none;
+  cursor          : pointer;
+  transition      : background-color 0.3s ease;
+  box-shadow      : 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius   : 5px;
+}
+
+.btn:hover {
+  background-color: #ff8000;
+}
+
+/*************** ESTILOS AL LOGIN ****************/
+.fondo-login {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fondo-login::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('img/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px); /* Aplica el desenfoque */
+  z-index: -1; /* Asegura que el fondo quede detrás del contenido */
+}
+
+.login-page {
+  width  : 400px;
+  padding: 8% 0 0;
+  margin : auto;
+
+}
+
+.form {
+  position  : relative;
+  z-index   : 1;
+  background: #FFFFFF;
+  max-width : 360px;
+  margin    : 0 auto 100px;
+  padding   : 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 20px 0 20px 0;
+}
+
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline    : 0;
+  background : #f2f2f2;
+  width      : 100%;
+  border     : 0;
+  margin     : 0 0 15px;
+  padding    : 15px;
+  box-sizing : border-box;
+  font-size  : 14px;
+}
+
+.form button {
+  font-family       : "Roboto", sans-serif;
+  text-transform    : uppercase;
+  outline           : 0;
+  background        : #3880eb;
+  width             : 100%;
+  border            : 0;
+  padding           : 15px;
+  color             : #FFFFFF;
+  font-size         : 14px;
+  -webkit-transition: all 0.3 ease;
+  transition        : all 0.3 ease;
+  cursor            : pointer;
+}
+
+.form button:hover,
+.form button:active,
+.form button:focus {
+  background: #265eb3;
+}
+
+.form .message {
+  margin   : 15px 0 0;
+  color    : #b3b3b3;
+  font-size: 12px;
+}
+
+.form .message a {
+  color          : #3880eb;
+  text-decoration: none;
+}
+.logros_recientes_img img{
+  filter: brightness(0.7); /* Oscurece la imagen ligeramente */
+transition: transform 0.5s ease, filter 0.5s ease; /* Suaviza la transición */
+transform: scale(1); /* Estado inicial de escala */
+border-radius: 8px; /* Asegura bordes redondeados en la imagen también */
+box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  width: 550px;
+  height: 350px;
+}
+.logros_recientes_img img:hover{
+  filter: brightness(1) contrast(1.2); /* Ajusta el brillo y aumenta el contraste */
+  transform: scale(1.05); /* Aplica un ligero aumento de escala */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}
+.servicios h2{
+text-align: center;
+}
+
+body {
+  font-family            : "Roboto", sans-serif;
+  -webkit-font-smoothing : antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*** FORMULARIO DE CONTACTOS ****/
+.section_contacto {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  background-color: #f8f9fa;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  gap: 35px;
+}
+
+h2 {
+  color: #333;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el formulario */
+.formulario_contacto {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.formulario_contacto label {
+  display: block;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.formulario_contacto input[type="text"],
+.formulario_contacto textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.formulario_contacto textarea {
+  resize: vertical;
+}
+
+.formulario_contacto button {
+  width: 100%;
+  padding: 10px;
+  background-color:#ff8000;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formulario_contacto button:hover {
+  background-color: #fbaf4b;
+}
+
+/* Estilos para el mapa */
+.map {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  text-align: center;
+  
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Estilos responsive */
+@media (max-width: 600px) {
+  .section_contacto {
+    padding: 10px;
+  }
+
+  .formulario_contacto, .map {
+    padding: 15px;
+    box-shadow: none;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
+
+/********************* Footer *********************/
+footer {
+  background-color: #3880eb;
+  color           : white;
+  padding         : 20px;
+  text-align      : center;
+  font-size       : 0.9rem;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer .social-icons {
+  margin: 10px 0;
+}
+
+/********************* Responsivo para tabletas y móviles ********************/
+@media (max-width: 1024px) {
+  .logo_titulo h1 {
+    font-size: 1.6rem;
+  }
+
+  .logo_titulo p {
+    font-size: 0.9rem;
+  }
+
+  .logo_titulo img {
+    width: 85px;
+  }
+
+  .social-icons a {
+    width : 35px;
+    height: 35px;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo_titulo h1 {
+    font-size: 1.4rem;
+  }
+
+  .logo_titulo p {
+    font-size: 0.8rem;
+  }
+
+  .logo_titulo img {
+    width: 75px;
+  }
+
+  .menu-hamburguesa {
+    display: flex;
+  }
+
+  nav ul {
+    display         : none;
+    flex-direction  : column;
+    background-color: #3880eb;
+    position        : absolute;
+    top             : 100px;
+    /* Empujar debajo del logo */
+    right           : 0;
+    width           : 100%;
+    text-align      : center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+  .img_bienvenida img{
+width: 380px;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+  .logo_titulo.shift {
+    /* Clase para empujar el logo */
+    transform: translateY(60px);
+    /* Ajusta el valor según sea necesario */
+  }
+  .logros_recientes_img img{
+    filter: brightness(0.7); /* Oscurece la imagen ligeramente */
+  transition: transform 0.5s ease, filter 0.5s ease; /* Suaviza la transición */
+  transform: scale(1); /* Estado inicial de escala */
+  border-radius: 8px; /* Asegura bordes redondeados en la imagen también */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    height: 250px;
+  }
+  .logros_recientes_img img:hover{
+    filter: brightness(1) contrast(1.2); /* Ajusta el brillo y aumenta el contraste */
+    transform: scale(1.05); /* Aplica un ligero aumento de escala */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+  }
+  .video_aniversario iframe{
+    width: 380px;
+    height: 250px;
+  }
+  .actividades{
+    margin: 10px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo_titulo img {
+    width: 70px;
+  }
+
+  .logo_titulo h1 {
+    font-size: 1.2rem;
+  }
+
+  .logo_titulo img {
+    width: 60px;
+  }
+
+  .social-icons a {
+    width : 30px;
+    height: 30px;
+  }
+  .img_bienvenida img{
+    width: 380px;
+      }
+  .btn {
+    padding  : 6px 12px;
+    font-size: 0.9rem;
+  }
+  .logros_recientes_img img{
+    width: 350px;
+    height: 250px;
+  }
+  .video_aniversario iframe{
+    width: 380px;
+    height: 250px;
+    padding: 10px;
+  }
+  .actividades{
+    margin: 10px;
+    width: 350px;
+    height: 300px;
+  }
+}
